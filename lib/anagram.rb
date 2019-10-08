@@ -8,7 +8,7 @@ class Anagram
   end
   
   def match(words)
-    is_match = false
+    matches = []
     words.each do |word|
       if word.split.sort == self.word.split.sort
         is_match = true
