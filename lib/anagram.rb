@@ -1,4 +1,5 @@
 # Your code goes here!
+require "pry"
 
 class Anagram
   attr_accessor :word
@@ -10,6 +11,7 @@ class Anagram
   def match(words)
     matches = []
     words.each do |word|
+      binding.pry
       if word.split.sort == self.word.split.sort
         matches.push(word)
       end
